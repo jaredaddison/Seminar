@@ -1,0 +1,170 @@
+{
+<<<<<<< HEAD
+  "name": "blood-gas-training",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "yarn && yarn prettier && yarn lint && yarn dev",
+    "dev": "vite --host",
+    "build": "vite build",
+    "serve": "vite preview",
+    "lint": "prettier lint --fix.",
+    "prettier": "prettier '**/*.{js,json,md,yml}' --write ."
+  },
+  "dependencies": {
+    "vue": "^3.0.11",
+    "vue-router": "^4.0.6"
+  },
+  "devDependencies": {
+    "@headlessui/vue": "^1.2.0",
+    "@heroicons/vue": "^1.0.1",
+    "@tailwindcss/aspect-ratio": "^0.2.0",
+    "@tailwindcss/forms": "^0.3.2",
+    "@tailwindcss/line-clamp": "^0.2.0",
+    "@tailwindcss/typography": "^0.4.0",
+    "@vitejs/plugin-vue": "^1.2.2",
+    "@vue/compiler-sfc": "^3.0.11",
+    "autoprefixer": "^10.2.5",
+    "eslint": "^7.27.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-vue": "^7.10.0",
+    "postcss": "^8.3.0",
+    "prettier": "^2.3.0",
+    "tailwindcss": "^2.1.4",
+    "vite": "^2.2.4",
+    "vue-eslint-parser": "^7.6.0"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "bracketSpacing": true,
+    "embeddedLanguageFormatting": "auto",
+    "htmlWhitespaceSensitivity": "css",
+    "insertPragma": false,
+    "jsxBracketSameLine": true,
+    "jsxSingleQuote": true,
+    "printWidth": 80,
+    "proseWrap": "preserve",
+    "quoteProps": "as-needed",
+    "requirePragma": false,
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "useTabs": true,
+    "vueIndentScriptAndStyle": false
+  },
+  "eslintConfig": {
+    "extends": [
+      "not-an-aardvark/node",
+        "plugin:node/recommended",
+        "plugin:eslint-plugin/recommended",
+        "prettier"
+        ],
+    "plugins": [
+      "prettier",
+      "node", "eslint-plugin", "self"
+    ],
+    "rules": {
+      "prettier/prettier": ["error"],
+      "arrow-body-style": "off",
+      "prefer-arrow-callback": "off",
+    "eslint-plugin/report-message-format": ["error", "^[^a-z].*\\.$"]
+    }
+  }
+}
+=======
+ "name": "blood-gas-training",
+ "version": "1.0.0",
+ "private": true,
+ "scripts": {
+  "start": "yarn && yarn prettier && yarn lint && yarn dev",
+  "dev": "vite --host",
+  "build": "vite build",
+  "serve": "vite preview",
+  "lint": "prettier lint --fix .",
+  "prettier": "prettier '**/*.{js,json,md,yml}' --write ."
+ },
+ "dependencies": {
+  "@vueuse/core": "^4.9.2",
+  "@vueuse/head": "^0.5.1",
+  "eslint-loader": "^4.0.2",
+  "prettier": "^2.3.0",
+  "prism-theme-vars": "^0.2.2",
+  "vue": "^3.0.11",
+  "vue-router": "^4.0.6",
+  "vue-template-compiler": "^2.6.12"
+ },
+ "devDependencies": {
+  "@antfu/eslint-config": "^0.6.5",
+  "@headlessui/vue": "^1.2.0",
+  "@heroicons/vue": "^1.0.1",
+  "@tailwindcss/aspect-ratio": "^0.2.0",
+  "@tailwindcss/forms": "^0.3.2",
+  "@tailwindcss/line-clamp": "^0.2.0",
+  "@tailwindcss/typography": "^0.4.0",
+  "@vitejs/plugin-vue": "^1.2.2",
+  "@vue/compiler-sfc": "^3.0.11",
+  "autoprefixer": "^10.2.5",
+  "eslint": "^7.27.0",
+  "eslint-config-prettier": "^8.3.0",
+  "eslint-plugin-import": "^2.23.4",
+  "eslint-plugin-node": "^11.1.0",
+  "eslint-plugin-prettier": "^3.4.0",
+  "eslint-plugin-promise": "^5.1.0",
+  "eslint-plugin-vue": "^7.10.0",
+  "postcss": "^8.3.0",
+  "prettier": "^2.3.0",
+  "tailwindcss": "^2.1.4",
+  "vite": "^2.2.4",
+  "vue-eslint-parser": "^7.6.0"
+ },
+ "prettier": {
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "embeddedLanguageFormatting": "auto",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "jsxBracketSameLine": true,
+  "jsxSingleQuote": true,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": false,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": true,
+  "vueIndentScriptAndStyle": false
+ },
+ "eslintConfig": {
+  "overrides": [{
+   "files": ["*.vue"],
+   "parser": "vue-eslint-parser",
+   "parserOptions": {
+    "parser": "@typescript-eslint/parser"
+   },
+   "rules": {
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "off"
+   }
+  }]
+ },
+ "extends": [
+  "plugin:vue/vue3-recommended",
+  "@antfu/eslint-config",
+  "prettier"
+ ],
+ "rules": {
+  "vue/max-attributes-per-line": ["warn", {
+   "singleline": 5
+  }],
+  "vue/html-self-closing": "off",
+  "vue/no-v-html": "off"
+ }
+}
+>>>>>>> 446da52a9cb7e7af0752c6a76de152473647b8a7
